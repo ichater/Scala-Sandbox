@@ -64,9 +64,14 @@ object Classes extends App {
 
   println(s"izaak is a ${mkBJJBeltOrNull("purple")}")
 
-  case class Student(var rollno: Int = 1, var name: String = "Dan", var marks: Int=85)
+  case class Student(var rollno: Int = 1, var name: String = "Dan", var marks: Int=85){
+    def show() = println("Hii")
+    def >(s2: Student): Boolean = marks > s2.marks
+  }
 
 
   val s1 = Student(2, "Izaak", 50)
   println(s1)
+  val s2 = Student(4,"JustNameChanged", 66)
+  println(s2.>(s1))
 }

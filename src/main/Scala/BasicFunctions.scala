@@ -4,4 +4,5 @@ object BasicFunctions extends App {
 
   def stringifyNumber(x: Int, y: Int):String = s"The numbers ${x} and ${y} are now strings"
   println(stringifyNumber(3,5))
+
 }
